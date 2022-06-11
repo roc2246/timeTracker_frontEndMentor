@@ -3,17 +3,24 @@ html {
   font-size: 16px; }
 
 body {
-  background-color: "hsl(235, 46%, 20%)";
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 main.grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-content: center;
   column-gap: 0.75rem;
-  row-gap: 1rem; }
+  row-gap: 1rem;
+  height: 60rem; }
   main.grid-container .main-box,
   main.grid-container .metric {
-    border: solid; }
+    border-radius: 1rem;
+    border: solid;
+    width: 20rem; }
   main.grid-container .main-box {
     grid-row-start: 1;
     grid-row-end: 3; }
+  main.grid-container .metric {
+    height: 20rem; }
