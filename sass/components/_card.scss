@@ -1,7 +1,6 @@
 .main-box,
 .metric {
   @include card();
-  cursor: pointer;
 }
 
 .main-box {
@@ -16,13 +15,11 @@
   .metric-state-change {
     padding: $card-padding;
   }
-  &:hover {
-    background-color: $color-blue;
-  }
 }
 
 .metric {
   height: $card-small-height;
+  cursor: pointer;
   &__img-box {
     @include activity-img($color-work);
     @include card();

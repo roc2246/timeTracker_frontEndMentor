@@ -10,8 +10,7 @@ body {
 .main-box,
 .metric {
   border-radius: 1rem;
-  width: 20rem;
-  cursor: pointer; }
+  width: 20rem; }
 
 .main-box {
   background-color: #1c1f4a; }
@@ -24,11 +23,10 @@ body {
     width: inherit; }
   .main-box .metric-state-change {
     padding: 1rem; }
-  .main-box:hover {
-    background-color: #5847eb; }
 
 .metric {
-  height: 20rem; }
+  height: 20rem;
+  cursor: pointer; }
   .metric__img-box {
     background-color: #ff8c66;
     border-radius: 1rem;
