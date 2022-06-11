@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+html {
+  font-size: 16px; }
+
+body {
+  background-color: "hsl(235, 46%, 20%)";
+  max-width: 100%; }
+
+main.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 0.75rem;
+  row-gap: 1rem; }
+  main.grid-container .main-box,
+  main.grid-container .metric {
+    border: solid; }
+  main.grid-container .main-box {
+    grid-row-start: 1;
+    grid-row-end: 3; }
