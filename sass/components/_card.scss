@@ -1,0 +1,10 @@
+.main-box,
+.metric {
+  @include card();
+  border: solid;
+  width: $card-width;
+}
+
+.metric {
+    height: $card-small-height;
+  }

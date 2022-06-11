@@ -6,19 +6,10 @@ main.grid-container {
   column-gap: $gutter-vertical;
   row-gap: $gutter-horizontal;
   height: $grid-height;
-  .main-box,
-  .metric {
-    @include card();
-    border: solid;
-    width: $card-width;
-  }
 
   .main-box {
     grid-row-start: 1;
     grid-row-end: 3;
   }
 
-  .metric {
-    height: $card-small-height;
-  }
 }

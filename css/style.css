@@ -3,9 +3,18 @@ html {
   font-size: 16px; }
 
 body {
-  background-color: #1c1f4a;
+  background-color: #0f1424;
   max-width: 100%;
   height: auto; }
+
+.main-box,
+.metric {
+  border-radius: 1rem;
+  border: solid;
+  width: 20rem; }
+
+.metric {
+  height: 20rem; }
 
 main.grid-container {
   display: grid;
@@ -15,13 +24,6 @@ main.grid-container {
   column-gap: 0.75rem;
   row-gap: 1rem;
   height: 60rem; }
-  main.grid-container .main-box,
-  main.grid-container .metric {
-    border-radius: 1rem;
-    border: solid;
-    width: 20rem; }
   main.grid-container .main-box {
     grid-row-start: 1;
     grid-row-end: 3; }
-  main.grid-container .metric {
-    height: 20rem; }
