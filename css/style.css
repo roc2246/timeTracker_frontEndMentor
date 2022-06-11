@@ -20,10 +20,17 @@ body {
 .main-box__top {
   border-radius: 1rem;
   width: 20rem;
-  background-color: #6f76c8; }
+  background-color: #6f76c8;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: inherit; }
+
+.main-box .metric-state-change {
+  padding: 1rem; }
 
 .metric {
-  height: 20rem; }
+  height: 20rem;
+  padding: 1rem; }
 
 main.grid-container {
   display: grid;

@@ -12,9 +12,16 @@
   &__top{
   @include card();
     background-color: $color-desaturated-blue;
+    padding: $card-padding;
+    box-sizing: border-box;
+    width: inherit;
+  }
+  .metric-state-change{
+    padding: $card-padding;
   }
 }
 
 .metric {
     height: $card-small-height;
+    padding: $card-padding;
   }
