@@ -1,27 +1,50 @@
 .main-box,
 .metric {
   @include card();
-  background-color: $color-dark-blue;
   cursor: pointer;
-  &:hover{
-    background-color: $color-blue;
-  }
 }
 
-.main-box{
-  &__top{
-  @include card();
+.main-box {
+  background-color: $color-dark-blue;
+  &__top {
+    @include card();
     background-color: $color-desaturated-blue;
     padding: $card-padding;
     box-sizing: border-box;
     width: inherit;
   }
-  .metric-state-change{
+  .metric-state-change {
     padding: $card-padding;
+  }
+  &:hover {
+    background-color: $color-blue;
   }
 }
 
 .metric {
-    height: $card-small-height;
-    padding: $card-padding;
+  height: $card-small-height;
+  &__img-box {
+    @include activity-img($color-work);
+    @include card();
+    box-sizing: border-box;
+    z-index: 0;
+    position: absolute;
+    width: inherit;
+    height: calc(#{$card-small-height} * 0.30);
   }
+  &__data {
+    @include card();
+    background-color: $color-dark-blue;
+    z-index: 1;
+    padding: $card-padding;
+    top: calc(#{$card-small-height} * 0.15);
+    position: relative;
+    height: calc(#{$card-small-height} * 0.85);
+    width: inherit;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+}

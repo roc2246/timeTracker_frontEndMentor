@@ -2,3 +2,7 @@
   border-radius: $border-radius;
   width: $card-width;
 }
+
+@mixin activity-img($background-color){
+  background-color: $background-color;
+}
