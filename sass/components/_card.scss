@@ -1,8 +1,18 @@
 .main-box,
 .metric {
   @include card();
-  border: solid;
-  width: $card-width;
+  background-color: $color-dark-blue;
+  cursor: pointer;
+  &:hover{
+    background-color: $color-blue;
+  }
+}
+
+.main-box{
+  &__top{
+  @include card();
+    background-color: $color-desaturated-blue;
+  }
 }
 
 .metric {

@@ -10,8 +10,17 @@ body {
 .main-box,
 .metric {
   border-radius: 1rem;
-  border: solid;
-  width: 20rem; }
+  width: 20rem;
+  background-color: #1c1f4a;
+  cursor: pointer; }
+  .main-box:hover,
+  .metric:hover {
+    background-color: #5847eb; }
+
+.main-box__top {
+  border-radius: 1rem;
+  width: 20rem;
+  background-color: #6f76c8; }
 
 .metric {
   height: 20rem; }

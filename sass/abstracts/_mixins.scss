@@ -1,3 +1,4 @@
 @mixin card {
-    border-radius: $border-radius;
+  border-radius: $border-radius;
+  width: $card-width;
 }
