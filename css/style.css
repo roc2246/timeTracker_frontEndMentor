@@ -5,35 +5,41 @@ h4 {
   font-weight: 300; }
 
 h1 {
-  font-size: 2.75rem; }
+  font-size: 3rem; }
 
 .main-box__top {
-  padding: 1rem; }
-  .main-box__top .user-box {
-    margin-top: -3rem;
-    margin-bottom: 4rem; }
-    .main-box__top .user-box__heading--main {
-      margin-top: 0; }
-    .main-box__top .user-box__heading--sub {
-      margin-bottom: 0; }
+  padding: 1.5rem; }
+  .main-box__top .user-box__heading--main {
+    margin-top: 0; }
+  .main-box__top .user-box__heading--sub {
+    margin-bottom: 0; }
 
 .main-box .metric-state-change {
   display: flex;
   flex-direction: column;
-  padding: 1rem; }
+  padding: 1.5rem; }
   .main-box .metric-state-change__category {
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     color: #bdc1ff; }
     .main-box .metric-state-change__category:hover {
       color: white; }
 
 .metric__data {
-  padding: 1rem; }
+  padding: 1.5rem; }
   .metric__data .name-and-menu-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    .metric__data .name-and-menu-box .activity {
+      margin: 0; }
+
+.metric .time {
+  margin-bottom: 0; }
+
+.metric .previous-metric {
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .time--weekly, .time--monthly,
 .previous-metric--weekly,
@@ -61,16 +67,14 @@ body {
     width: 20rem;
     background-color: #5847eb;
     box-sizing: border-box;
-    width: inherit; }
-    .main-box__top .user-img-box {
-      transform: scale(40%);
-      margin-right: 18rem;
-      margin-top: -4.5rem; }
-      .main-box__top .user-img-box .user-img {
-        border: solid;
-        border-width: .25rem;
-        border-radius: 50%;
-        border-color: white; }
+    width: inherit;
+    height: calc(20rem * 1.25); }
+    .main-box__top .user-img {
+      border: solid;
+      width: 25%;
+      border-width: 0.25rem;
+      border-radius: 50%;
+      border-color: white; }
 
 .metric {
   height: 20rem;
@@ -82,7 +86,7 @@ body {
     z-index: 0;
     position: absolute;
     width: inherit;
-    height: calc(20rem * 0.30); }
+    height: calc(20rem * 0.3); }
     .metric__img-box--work {
       background-color: #ff8c66; }
     .metric__img-box--play {
@@ -108,9 +112,8 @@ body {
     height: calc(20rem * 0.85);
     width: inherit;
     box-sizing: border-box; }
-    .metric__data .name-and-menu-box img {
-      height: 20%;
-      padding-top: 1.5rem; }
+    .metric__data .name-and-menu-box .ellipsis-toggle {
+      height: 50%; }
     .metric__data:hover {
       background-color: #5847eb; }
 

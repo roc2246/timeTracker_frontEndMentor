@@ -4,15 +4,13 @@ h4 {
   font-weight: $font-weight-light;
 }
 h1 {
-  font-size: 2.75rem;
+  font-size: 3rem;
 }
 
 .main-box {
   &__top {
     padding: $card-padding;
     .user-box {
-      margin-top: -3rem;
-      margin-bottom: 4rem;
       &__heading {
         &--main {
           margin-top: 0;
@@ -40,12 +38,23 @@ h1 {
 
 .metric {
   &__data {
+    padding: $card-padding;
     .name-and-menu-box {
+      .activity{
+        margin: 0;
+      }
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
-    padding: $card-padding;
+  }
+  .time{
+    // margin-top: 0;
+    margin-bottom: 0;
+  }
+  .previous-metric{
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

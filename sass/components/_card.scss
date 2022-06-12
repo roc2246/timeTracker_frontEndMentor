@@ -10,16 +10,13 @@
     background-color: $color-blue;
     box-sizing: border-box;
     width: inherit;
-    .user-img-box{
-      transform: scale(40%);
-      margin-right: 18rem;
-      margin-top: -4.5rem;
-      .user-img{
-        border: solid;
-        border-width: .25rem;
-        border-radius: 50%;
-        border-color: white;
-      }
+    height: calc(#{$card-small-height} * 1.25);
+    .user-img {
+      border: solid;
+      width: 25%;
+      border-width: 0.25rem;
+      border-radius: 50%;
+      border-color: white;
     }
   }
 }
@@ -34,17 +31,16 @@
     z-index: 0;
     position: absolute;
     width: inherit;
-    height: calc(#{$card-small-height} * 0.30);
-    .activity-img{
+    height: calc(#{$card-small-height} * 0.3);
+    .activity-img {
       float: right;
       margin-right: 1rem;
     }
   }
   &__data {
-    .name-and-menu-box{
-      img{
-        height:  20%;
-        padding-top: 1.5rem
+    .name-and-menu-box {
+      .ellipsis-toggle {
+        height: 50%;
       }
     }
     @include card();
