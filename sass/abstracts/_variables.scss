@@ -9,14 +9,14 @@ $color-very-dark-blue: hsl(226, 43%, 10%);
 $color-desaturated-blue: hsl(235, 45%, 61%);
 $color-pale-blue: hsl(236, 100%, 87%);
 
-$color-work: hsl(15, 100%, 70%);
-$color-play: hsl(195, 74%, 62%);
-$color-study: hsl(348, 100%, 68%);
-$color-exercise: hsl(145, 58%, 55%);
-$color-social: hsl(264, 64%, 52%);
-$color-self-care: hsl(43, 84%, 65%);
-
-
+$color-activites: (
+  "work": hsl(15, 100%, 70%),
+  "play": hsl(195, 74%, 62%),
+  "study": hsl(348, 100%, 68%),
+  "exercise": hsl(145, 58%, 55%),
+  "social": hsl(264, 64%, 52%),
+  "self-care": hsl(43, 84%, 65%),
+);
 
 //Typography
 $font-size-card-titles: 1.125rem;
@@ -34,6 +34,5 @@ $card-width: 20rem;
 $card-small-height: 20rem;
 $card-padding: 1rem;
 
-
-$gutter-vertical: .75rem;
+$gutter-vertical: 0.75rem;
 $gutter-horizontal: 1rem;
