@@ -73,6 +73,18 @@ body {
     position: absolute;
     width: inherit;
     height: calc(20rem * 0.30); }
+    .metric__img-box--work {
+      background-color: #ff8c66; }
+    .metric__img-box--play {
+      background-color: #56c2e6; }
+    .metric__img-box--study {
+      background-color: #ff5c7c; }
+    .metric__img-box--exercise {
+      background-color: #4acf81; }
+    .metric__img-box--social {
+      background-color: #7536d3; }
+    .metric__img-box--self-care {
+      background-color: #f1c65b; }
   .metric__data {
     border-radius: 1rem;
     width: 20rem;

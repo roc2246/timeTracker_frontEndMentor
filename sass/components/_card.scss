@@ -17,7 +17,7 @@
   height: $card-small-height;
   cursor: pointer;
   &__img-box {
-    // @include activity-img($color-work);
+    @include activity-img();
     @include card();
     box-sizing: border-box;
     z-index: 0;

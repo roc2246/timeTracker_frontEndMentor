@@ -3,6 +3,10 @@
   width: $card-width;
 }
 
-@mixin activity-img($background-color){
-  background-color: $background-color;
+@mixin activity-img() {
+  @each $activity, $color in $color-activites {
+    &--#{$activity} {
+      background-color: #{$color};
+    }
+  }
 }
