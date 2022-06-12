@@ -85,6 +85,9 @@ body {
       background-color: #7536d3; }
     .metric__img-box--self-care {
       background-color: #f1c65b; }
+    .metric__img-box .activity-img {
+      float: right;
+      margin-right: 1rem; }
   .metric__data {
     border-radius: 1rem;
     width: 20rem;

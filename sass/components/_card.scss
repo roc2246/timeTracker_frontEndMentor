@@ -24,6 +24,10 @@
     position: absolute;
     width: inherit;
     height: calc(#{$card-small-height} * 0.30);
+    .activity-img{
+      float: right;
+      margin-right: 1rem;
+    }
   }
   &__data {
     .name-and-menu-box{
