@@ -7,19 +7,21 @@ h1 {
   font-size: 2.75rem;
 }
 
-.user-box {
-  &__heading {
-    &--main {
-      margin-top: 0;
-    }
-    &--sub {
-      margin-bottom: 0;
-    }
-  }
-}
 .main-box {
   &__top {
     padding: $card-padding;
+    .user-box {
+      margin-top: -3rem;
+      margin-bottom: 4rem;
+      &__heading {
+        &--main {
+          margin-top: 0;
+        }
+        &--sub {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
   .metric-state-change {
     display: flex;

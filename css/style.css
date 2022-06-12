@@ -7,14 +7,15 @@ h4 {
 h1 {
   font-size: 2.75rem; }
 
-.user-box__heading--main {
-  margin-top: 0; }
-
-.user-box__heading--sub {
-  margin-bottom: 0; }
-
 .main-box__top {
   padding: 1rem; }
+  .main-box__top .user-box {
+    margin-top: -3rem;
+    margin-bottom: 4rem; }
+    .main-box__top .user-box__heading--main {
+      margin-top: 0; }
+    .main-box__top .user-box__heading--sub {
+      margin-bottom: 0; }
 
 .main-box .metric-state-change {
   display: flex;
@@ -58,9 +59,18 @@ body {
   .main-box__top {
     border-radius: 1rem;
     width: 20rem;
-    background-color: #6f76c8;
+    background-color: #5847eb;
     box-sizing: border-box;
     width: inherit; }
+    .main-box__top .user-img-box {
+      transform: scale(40%);
+      margin-right: 18rem;
+      margin-top: -4.5rem; }
+      .main-box__top .user-img-box .user-img {
+        border: solid;
+        border-width: .25rem;
+        border-radius: 50%;
+        border-color: white; }
 
 .metric {
   height: 20rem;

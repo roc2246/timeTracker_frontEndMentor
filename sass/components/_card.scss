@@ -7,9 +7,20 @@
   background-color: $color-dark-blue;
   &__top {
     @include card();
-    background-color: $color-desaturated-blue;
+    background-color: $color-blue;
     box-sizing: border-box;
     width: inherit;
+    .user-img-box{
+      transform: scale(40%);
+      margin-right: 18rem;
+      margin-top: -4.5rem;
+      .user-img{
+        border: solid;
+        border-width: .25rem;
+        border-radius: 50%;
+        border-color: white;
+      }
+    }
   }
 }
 
