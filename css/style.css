@@ -58,7 +58,6 @@ body {
     border-radius: 1rem;
     background-color: #5847eb;
     box-sizing: border-box;
-    width: inherit;
     height: calc(20rem * 1.25); }
     .main-box__top .user-img {
       border: solid;
@@ -68,43 +67,39 @@ body {
       border-color: white; }
 
 .metric {
-  height: 20rem;
-  cursor: pointer; }
-  .metric__img-box {
-    border-radius: 1rem;
-    box-sizing: border-box;
-    z-index: 0;
-    position: absolute;
-    width: calc((100% / 4) - 1rem);
-    height: calc(20rem * 0.3); }
-    .metric__img-box--work {
-      background-color: #ff8c66; }
-    .metric__img-box--play {
-      background-color: #56c2e6; }
-    .metric__img-box--study {
-      background-color: #ff5c7c; }
-    .metric__img-box--exercise {
-      background-color: #4acf81; }
-    .metric__img-box--social {
-      background-color: #7536d3; }
-    .metric__img-box--self-care {
-      background-color: #f1c65b; }
-    .metric__img-box .activity-img {
-      float: right;
-      margin-right: 1rem; }
+  border-radius: 1rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; }
+  .metric--work {
+    background-color: #ff8c66; }
+  .metric--play {
+    background-color: #56c2e6; }
+  .metric--study {
+    background-color: #ff5c7c; }
+  .metric--exercise {
+    background-color: #4acf81; }
+  .metric--social {
+    background-color: #7536d3; }
+  .metric--self-care {
+    background-color: #f1c65b; }
+  .metric .activity-img {
+    margin-left: auto; }
   .metric__data {
     border-radius: 1rem;
+    margin-top: auto;
     background-color: #1c1f4a;
-    z-index: 1;
-    top: calc(20rem * 0.15);
-    position: relative;
-    height: calc(20rem * 0.85);
     box-sizing: border-box; }
     .metric__data .name-and-menu-box .ellipsis-toggle {
       height: 50%; }
     .metric__data:hover {
       background-color: #5847eb; }
 
+/*
+ REFER TO HERE:
+https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+ */
 main.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

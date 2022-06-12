@@ -1,15 +1,14 @@
 .main-box,
 .metric {
-  @include card();
+  border-radius: $border-radius;
 }
 
 .main-box {
   background-color: $color-dark-blue;
   &__top {
-    @include card();
+    border-radius: $border-radius;
     background-color: $color-blue;
     box-sizing: border-box;
-    width: inherit;
     height: calc(#{$card-small-height} * 1.25);
     .user-img {
       border: solid;
@@ -22,36 +21,25 @@
 }
 
 .metric {
-  height: $card-small-height;
+  @include activity-img();
+  border-radius: $border-radius;
   cursor: pointer;
-  &__img-box {
-    @include activity-img();
-    @include card();
-    box-sizing: border-box;
-    z-index: 0;
-    position: absolute;
-    width: calc((100% / 4) - #{$gutter});
-    height: calc(#{$card-small-height} * 0.3);
-    .activity-img {
-      float: right;
-      margin-right: 1rem;
-    }
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  .activity-img {
+    margin-left: auto;
   }
   &__data {
+    border-radius: $border-radius;
+    margin-top: auto;
+    background-color: $color-dark-blue;
+    box-sizing: border-box;
     .name-and-menu-box {
       .ellipsis-toggle {
         height: 50%;
       }
     }
-    @include card();
-    background-color: $color-dark-blue;
-    z-index: 1;
-    top: calc(#{$card-small-height} * 0.15);
-    position: relative;
-    height: calc(#{$card-small-height} * 0.85);
-    // width: inherit;
-    box-sizing: border-box;
-
     &:hover {
       background-color: $color-blue;
     }
