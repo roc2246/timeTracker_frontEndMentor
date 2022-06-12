@@ -13,22 +13,30 @@ h1 {
 .user-box__heading--sub {
   margin-bottom: 0; }
 
-.metric-state-change {
+.main-box__top {
+  padding: 1rem; }
+
+.main-box .metric-state-change {
   display: flex;
-  flex-direction: column; }
-  .metric-state-change__category {
+  flex-direction: column;
+  padding: 1rem; }
+  .main-box .metric-state-change__category {
     cursor: pointer;
     margin-top: 1rem;
     color: #bdc1ff; }
-    .metric-state-change__category:hover {
+    .main-box .metric-state-change__category:hover {
       color: white; }
 
-.metric__data .name-and-menu-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+.metric__data {
+  padding: 1rem; }
+  .metric__data .name-and-menu-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
 
-.time--weekly, .time--monthly, .previous-metric--weekly, .previous-metric--monthly {
+.time--weekly, .time--monthly,
+.previous-metric--weekly,
+.previous-metric--monthly {
   display: none; }
 
 html {
@@ -51,11 +59,8 @@ body {
     border-radius: 1rem;
     width: 20rem;
     background-color: #6f76c8;
-    padding: 1rem;
     box-sizing: border-box;
     width: inherit; }
-  .main-box .metric-state-change {
-    padding: 1rem; }
 
 .metric {
   height: 20rem;
@@ -74,12 +79,14 @@ body {
     width: 20rem;
     background-color: #1c1f4a;
     z-index: 1;
-    padding: 1rem;
     top: calc(20rem * 0.15);
     position: relative;
     height: calc(20rem * 0.85);
     width: inherit;
     box-sizing: border-box; }
+    .metric__data .name-and-menu-box img {
+      height: 20%;
+      padding-top: 1.5rem; }
     .metric__data:hover {
       background-color: #5847eb; }
 

@@ -8,12 +8,8 @@
   &__top {
     @include card();
     background-color: $color-desaturated-blue;
-    padding: $card-padding;
     box-sizing: border-box;
     width: inherit;
-  }
-  .metric-state-change {
-    padding: $card-padding;
   }
 }
 
@@ -30,10 +26,15 @@
     height: calc(#{$card-small-height} * 0.30);
   }
   &__data {
+    .name-and-menu-box{
+      img{
+        height:  20%;
+        padding-top: 1.5rem
+      }
+    }
     @include card();
     background-color: $color-dark-blue;
     z-index: 1;
-    padding: $card-padding;
     top: calc(#{$card-small-height} * 0.15);
     position: relative;
     height: calc(#{$card-small-height} * 0.85);

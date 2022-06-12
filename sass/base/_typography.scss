@@ -7,43 +7,50 @@ h1 {
   font-size: 2.75rem;
 }
 
-.user-box{
-    &__heading{
-        &--main{
-            margin-top: 0;
-        }
-        &--sub{
-            margin-bottom: 0;
-        }
+.user-box {
+  &__heading {
+    &--main {
+      margin-top: 0;
     }
+    &--sub {
+      margin-bottom: 0;
+    }
+  }
 }
-
-.metric-state-change {
-  display: flex;
-  flex-direction: column;
-  &__category {
-    cursor: pointer;
-    margin-top: $card-padding;
-    color: $color-pale-blue;
-    &:hover {
-      color: white;
+.main-box {
+  &__top {
+    padding: $card-padding;
+  }
+  .metric-state-change {
+    display: flex;
+    flex-direction: column;
+    padding: $card-padding;
+    &__category {
+      cursor: pointer;
+      margin-top: $card-padding;
+      color: $color-pale-blue;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
 
-.metric{
-    &__data{
-        .name-and-menu-box{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+.metric {
+  &__data {
+    .name-and-menu-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
+    padding: $card-padding;
+  }
 }
 
-.time, .previous-metric{
-    &--weekly, &--monthly{
-        display: none;
-    }
+.time,
+.previous-metric {
+  &--weekly,
+  &--monthly {
+    display: none;
+  }
 }
-
