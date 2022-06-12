@@ -30,7 +30,7 @@
     box-sizing: border-box;
     z-index: 0;
     position: absolute;
-    width: inherit;
+    width: calc((100% / 4) - #{$gutter});
     height: calc(#{$card-small-height} * 0.3);
     .activity-img {
       float: right;
@@ -49,7 +49,7 @@
     top: calc(#{$card-small-height} * 0.15);
     position: relative;
     height: calc(#{$card-small-height} * 0.85);
-    width: inherit;
+    // width: inherit;
     box-sizing: border-box;
 
     &:hover {

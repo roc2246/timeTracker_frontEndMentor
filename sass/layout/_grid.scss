@@ -1,12 +1,7 @@
 main.grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
-  align-content: center;
-  column-gap: $gutter-vertical;
-  row-gap: $gutter-horizontal;
-  height: $grid-height;
-
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $gutter;
   .main-box {
     grid-row-start: 1;
     grid-row-end: 3;
