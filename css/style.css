@@ -1,6 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+h1,
+h4 {
+  color: white;
+  font-weight: 300; }
+
+h1 {
+  font-size: 2.75rem; }
+
+.user-box__heading--main {
+  margin-top: 0; }
+
+.user-box__heading--sub {
+  margin-bottom: 0; }
+
+.metric-state-change {
+  display: flex;
+  flex-direction: column; }
+  .metric-state-change__category {
+    cursor: pointer;
+    margin-top: 1rem;
+    color: #bdc1ff; }
+    .metric-state-change__category:hover {
+      color: white; }
+
+.metric__data .name-and-menu-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.time--weekly, .time--monthly, .previous-metric--weekly, .previous-metric--monthly {
+  display: none; }
+
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: "Overpass", sans-serif; }
 
 body {
   background-color: #0f1424;
