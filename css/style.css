@@ -48,11 +48,8 @@ html {
 body {
   background-color: #0f1424; }
 
-.main-box,
-.metric {
-  border-radius: 1rem; }
-
 .main-box {
+  border-radius: 1rem;
   background-color: #1c1f4a; }
   .main-box__top {
     border-radius: 1rem;
@@ -67,7 +64,10 @@ body {
       border-color: white; }
 
 .metric {
-  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: calc(1rem / .5);
+  border-bottom-left-radius: calc(1rem / .5);
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
@@ -85,12 +85,14 @@ body {
   .metric--self-care {
     background-color: #f1c65b; }
   .metric .activity-img {
-    margin-left: auto; }
+    position: absolute; }
   .metric__data {
+    position: relative;
     border-radius: 1rem;
     margin-top: auto;
     background-color: #1c1f4a;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    height: 80%; }
     .metric__data .name-and-menu-box .ellipsis-toggle {
       height: 50%; }
     .metric__data:hover {

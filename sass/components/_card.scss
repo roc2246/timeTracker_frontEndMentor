@@ -1,9 +1,5 @@
-.main-box,
-.metric {
-  border-radius: $border-radius;
-}
-
 .main-box {
+  border-radius: $border-radius;
   background-color: $color-dark-blue;
   &__top {
     border-radius: $border-radius;
@@ -22,19 +18,24 @@
 
 .metric {
   @include activity-img();
-  border-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: calc(#{$border-radius} / .5);
+  border-bottom-left-radius: calc(#{$border-radius} / .5);
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   .activity-img {
-    margin-left: auto;
+    position: absolute;
   }
   &__data {
+    position: relative;
     border-radius: $border-radius;
     margin-top: auto;
     background-color: $color-dark-blue;
     box-sizing: border-box;
+    height: 80%;
     .name-and-menu-box {
       .ellipsis-toggle {
         height: 50%;
