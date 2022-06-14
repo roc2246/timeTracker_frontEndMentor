@@ -1,12 +1,11 @@
-/*
- REFER TO HERE:
-https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
- */
-
 main.grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: $gutter;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   .main-box {
     grid-row-start: 1;
     grid-row-end: 3;
