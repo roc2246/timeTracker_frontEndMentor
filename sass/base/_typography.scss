@@ -3,6 +3,7 @@ h4 {
   color: white;
   font-weight: $font-weight-light;
 }
+
 h1 {
   font-size: 1.5rem;
 }
@@ -21,7 +22,6 @@ h1 {
         }
         &--sub {
           margin-bottom: 0;
-          color: $color-desaturated-blue;
         }
       }
     }
@@ -59,14 +59,26 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     .time{
       margin-top: .25rem;
+      margin-bottom: 0;
     }
     .previous-metric{
-      margin-top: .5rem;
-      color: $color-desaturated-blue;
+      margin-top: 1rem;
     }
   }
 }
 
+@media (max-width: calc(#{$width-mobile} + 0.0625rem)) {
+  .time{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: calc(#{$width-mobile} + 0.0625rem)) {
+  h1, .time{
+    font-size: 3rem;
+  }
+}

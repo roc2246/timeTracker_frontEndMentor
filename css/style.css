@@ -16,8 +16,7 @@ h1 {
   .main-box__top .user-box__heading--main {
     margin-top: .25rem; }
   .main-box__top .user-box__heading--sub {
-    margin-bottom: 0;
-    color: #6f76c8; }
+    margin-bottom: 0; }
 
 .main-box .metric-state-change {
   display: flex;
@@ -45,12 +44,21 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 1rem; }
+  margin-top: 1rem;
+  margin-bottom: 1.5rem; }
   .metric .data-wrapper .time {
-    margin-top: .25rem; }
+    margin-top: .25rem;
+    margin-bottom: 0; }
   .metric .data-wrapper .previous-metric {
-    margin-top: .5rem;
-    color: #6f76c8; }
+    margin-top: 1rem; }
+
+@media (max-width: calc(23.438rem + 0.0625rem)) {
+  .time {
+    font-size: 2rem; } }
+
+@media (min-width: calc(23.438rem + 0.0625rem)) {
+  h1, .time {
+    font-size: 3rem; } }
 
 html {
   font-size: 16px;
@@ -103,7 +111,7 @@ body {
     margin-top: auto;
     background-color: #1c1f4a;
     box-sizing: border-box;
-    height: 70%; }
+    height: 80%; }
     .metric__data .name-and-menu-box .ellipsis-toggle {
       height: 50%; }
     .metric__data:hover {

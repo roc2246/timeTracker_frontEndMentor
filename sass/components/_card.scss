@@ -35,7 +35,7 @@
     margin-top: auto;
     background-color: $color-dark-blue;
     box-sizing: border-box;
-    height: 70%;
+    height: $metric-data-height;
     .name-and-menu-box {
       .ellipsis-toggle {
         height: 50%;
