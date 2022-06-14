@@ -20,7 +20,7 @@ $color-activites: (
 
 //Typography
 $font-size-card-titles: 1.125rem;
-$font-family: "Overpass", sans-serif;
+$font-family: "Rubik", sans-serif;
 $font-weight-light: 300;
 $font-weight-medium: 400;
 $font-weight-heavy: 500;
@@ -29,9 +29,14 @@ $font-weight-heavy: 500;
 $border-radius: 1rem;
 
 $grid-height: 60rem;
+// $grid-width: 60%;
 
-$card-width: 20rem;
+$gutter: 2rem;
+
+
+$column-min-width: 15rem;
+$column-max-width: 1fr;
+
 $card-small-height: 20rem;
-$card-padding: 1.5rem;
+$card-padding: 2rem;
 
-$gutter: 1rem;

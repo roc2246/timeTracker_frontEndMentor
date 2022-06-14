@@ -5,10 +5,10 @@
     border-radius: $border-radius;
     background-color: $color-blue;
     box-sizing: border-box;
-    height: calc(#{$card-small-height} * 1.25);
     .user-img {
       border: solid;
-      width: 25%;
+      width: 4.5rem;
+      height: 4.5rem;
       border-width: 0.25rem;
       border-radius: 50%;
       border-color: white;
@@ -35,7 +35,7 @@
     margin-top: auto;
     background-color: $color-dark-blue;
     box-sizing: border-box;
-    height: 80%;
+    height: 70%;
     .name-and-menu-box {
       .ellipsis-toggle {
         height: 50%;

@@ -4,30 +4,36 @@ h4 {
   font-weight: $font-weight-light;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .main-box {
   &__top {
     padding: $card-padding;
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     .user-box {
       &__heading {
         &--main {
-          margin-top: 0;
+          margin-top: .25rem;
         }
         &--sub {
           margin-bottom: 0;
+          color: $color-desaturated-blue;
         }
       }
     }
   }
   .metric-state-change {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: $card-padding;
     &__category {
       cursor: pointer;
-      margin-top: $card-padding;
       color: $color-pale-blue;
       &:hover {
         color: white;
@@ -53,8 +59,13 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
     .time{
-      margin: 0;
+      margin-top: .25rem;
+    }
+    .previous-metric{
+      margin-top: .5rem;
+      color: $color-desaturated-blue;
     }
   }
 }
