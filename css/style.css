@@ -111,9 +111,10 @@ body {
 
 main.grid-container {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
+  margin: auto;
+  width: min(70rem, 90%); }
   main.grid-container .main-box {
     grid-row-start: 1;
     grid-row-end: 3; }

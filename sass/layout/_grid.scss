@@ -1,10 +1,9 @@
 main.grid-container {
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax($column-min-width, $column-max-width));
+  grid-template-columns: repeat(auto-fit, minmax($column-min-width, $column-max-width));
   grid-gap: $gutter;
-  // width: $grid-width;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: auto;
+  width: $grid-width;
   .main-box {
     grid-row-start: 1;
     grid-row-end: 3;

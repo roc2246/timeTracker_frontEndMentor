@@ -28,11 +28,9 @@ $font-weight-heavy: 500;
 //Layout
 $border-radius: 1rem;
 
-$grid-height: 60rem;
-// $grid-width: 60%;
+$grid-width: #{'min(70rem, 90%)'};
 
 $gutter: 2rem;
-
 
 $column-min-width: 15rem;
 $column-max-width: 1fr;
