@@ -34,11 +34,13 @@ h1 {
     .metric__data .name-and-menu-box .activity {
       margin: 0; }
 
-.metric .time {
-  margin-bottom: 0; }
-
-.metric .previous-metric {
-  margin-top: 0; }
+.metric .data-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .metric .data-wrapper .time {
+    margin: 0; }
 
 html {
   font-size: 16px;

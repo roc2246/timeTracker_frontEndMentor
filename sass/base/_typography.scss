@@ -48,11 +48,14 @@ h1 {
       }
     }
   }
-  .time{
-    margin-bottom: 0;
-  }
-  .previous-metric{
-    margin-top: 0;
+  .data-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .time{
+      margin: 0;
+    }
   }
 }
 
