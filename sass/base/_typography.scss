@@ -28,11 +28,14 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: #{"min()"};
+
+    width:$metric-state-change-desktop;
     padding: $card-padding;
+    margin-top: calc((#{$card-padding} - 2.25rem));
     &__category {
       cursor: pointer;
       color: $color-pale-blue;
+      margin-top: 1rem;
       &:hover {
         color: white;
       }
@@ -67,5 +70,11 @@ h4 {
     .previous-metric {
       margin-top: 1rem;
     }
+  }
+}
+
+@media (max-width: $width-mobile) {
+  .metric-state-change{
+    width: $card-inner-width !important;
   }
 }
