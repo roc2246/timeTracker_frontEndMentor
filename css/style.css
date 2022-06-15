@@ -21,7 +21,7 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: calc(calc(100% - (1.75rem * 2)) / 4);
+  width: clamp(25%, 10%,  calc(100% - (1.75rem * 2)));
   padding: 1.75rem;
   margin-top: calc((1.75rem - 2.25rem)); }
   .main-box .metric-state-change__category {
@@ -53,10 +53,6 @@ h4 {
     font-size: clamp(2rem, 5vw, 3rem); }
   .metric .data-wrapper .previous-metric {
     margin-top: 1rem; }
-
-@media (max-width: 23.438rem) {
-  .metric-state-change {
-    width: calc(100% - (1.75rem * 2)) !important; } }
 
 html {
   font-size: 16px;

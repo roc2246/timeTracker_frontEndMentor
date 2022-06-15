@@ -28,8 +28,7 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    width:$metric-state-change-desktop;
+    width:#{'clamp(25%, 10%,  #{$card-inner-width})'};
     padding: $card-padding;
     margin-top: calc((#{$card-padding} - 2.25rem));
     &__category {
@@ -70,11 +69,5 @@ h4 {
     .previous-metric {
       margin-top: 1rem;
     }
-  }
-}
-
-@media (max-width: $width-mobile) {
-  .metric-state-change{
-    width: $card-inner-width !important;
   }
 }
