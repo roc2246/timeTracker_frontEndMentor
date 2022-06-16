@@ -1,7 +1,9 @@
 const card = document.querySelectorAll(".main-box, .metric");
 const metricStateChange = document.getElementsByClassName("metric-state-change")[0]
 const mainBox = card[0]
-    
+
+//DOM Manipulation
+
 const displayWindowSize = () => {
 
     if(mainBox.clientWidth <= 256){
