@@ -41,8 +41,4 @@ $column-max-width: 1fr;
 $card-small-height: 20rem;
 $card-padding: 1.75rem;
 
-$card-inner-width: calc(100% - (#{$card-padding} * 2) );
-$metric-state-change-width: calc(#{$card-inner-width} * #{'clamp(.25, .2, 1)'});
-
 $metric-data-height: 80%;
-

@@ -3,7 +3,6 @@ h4 {
   color: white;
   font-weight: $font-weight-light;
 }
-
 .main-box {
   &__top {
     padding: $card-padding;
@@ -28,7 +27,6 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:#{'clamp(25%, 10%,  #{$card-inner-width})'};
     padding: $card-padding;
     margin-top: calc((#{$card-padding} - 2.25rem));
     &__category {
