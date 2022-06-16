@@ -21,13 +21,42 @@ displayWindowSize();
 const activities = document.getElementsByClassName("activity");
 const time = document.getElementsByClassName("time--amount");
 const prevTime = document.getElementsByClassName("previous-metric--metric");
+const stateSelector = document.getElementsByClassName("metric-state-change__category")
+
+const assignDataMonthly = (data) => {
+  Object.keys(data).forEach((activity) => {
+    activities[activity].innerHTML = data[activity].title;
+    time[activity].innerHTML = data[activity].timeframes.monthly.current;
+    prevTime[activity].innerHTML = data[activity].timeframes.monthly.previous;
+  });
+}
+
+const assignDataWeekly = (data) => {
+  Object.keys(data).forEach((activity) => {
+    activities[activity].innerHTML = data[activity].title;
+    time[activity].innerHTML = data[activity].timeframes.weekly.current;
+    prevTime[activity].innerHTML = data[activity].timeframes.weekly.previous;
+  });
+}
+
+const assignDataDaily = (data) => {
+  Object.keys(data).forEach((activity) => {
+    activities[activity].innerHTML = data[activity].title;
+    time[activity].innerHTML = data[activity].timeframes.daily.current;
+    prevTime[activity].innerHTML = data[activity].timeframes.daily.previous;
+  });
+}
 
 fetch("../data.json")
   .then((response) => response.json())
   .then((data) => {
-    Object.keys(data).forEach((activity) => {
-      activities[activity].innerHTML = data[activity].title;
-      time[activity].innerHTML = data[activity].timeframes.weekly.current;
-      prevTime[activity].innerHTML = data[activity].timeframes.weekly.previous;
-    });
+      stateSelector[0].addEventListener("click", () => {
+        assignDataDaily(data)
+      })
+      stateSelector[1].addEventListener("click", () => {
+        assignDataWeekly(data)
+      })
+      stateSelector[2].addEventListener("click", () => {
+        assignDataMonthly(data)
+      })
   });
