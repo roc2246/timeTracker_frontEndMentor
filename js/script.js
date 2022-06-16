@@ -17,6 +17,9 @@ window.addEventListener("resize", displayWindowSize);
 
 displayWindowSize();
 
+
+
+
 //Fetch data
 const activities = document.getElementsByClassName("activity");
 const time = document.getElementsByClassName("time--amount");
@@ -51,12 +54,24 @@ fetch("../data.json")
   .then((response) => response.json())
   .then((data) => {
       stateSelector[0].addEventListener("click", () => {
+        Object.keys(stateSelector).forEach(state => {
+          stateSelector[state].style.color = "hsl(236, 100%, 87%)"
+        })
         assignDataDaily(data)
+        stateSelector[0].style.color = "white"
       })
       stateSelector[1].addEventListener("click", () => {
+        Object.keys(stateSelector).forEach(state => {
+          stateSelector[state].style.color = "hsl(236, 100%, 87%)"
+        })
         assignDataWeekly(data)
+        stateSelector[1].style.color = "white"
       })
       stateSelector[2].addEventListener("click", () => {
+        Object.keys(stateSelector).forEach(state => {
+          stateSelector[state].style.color = "hsl(236, 100%, 87%)"
+        })
         assignDataMonthly(data)
+        stateSelector[2].style.color = "white"
       })
   });
