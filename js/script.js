@@ -53,6 +53,8 @@ const assignDataDaily = (data) => {
 fetch("../data.json")
   .then((response) => response.json())
   .then((data) => {
+    assignDataWeekly(data);
+    stateSelector[1].style.color = "white"
       stateSelector[0].addEventListener("click", () => {
         Object.keys(stateSelector).forEach(state => {
           stateSelector[state].style.color = "hsl(236, 100%, 87%)"
