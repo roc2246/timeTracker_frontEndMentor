@@ -19,7 +19,6 @@
 .metric {
   @include activity-img();
   position: relative;
-  overflow: hidden;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
   border-bottom-right-radius: calc(#{$border-radius} / 0.5);
@@ -32,8 +31,7 @@
     position: absolute;
     margin-left: auto;
     left: 0;
-    right: .5rem;
-    top: -.5rem;
+    right: 1rem;
   }
   &__data {
     position: relative;
