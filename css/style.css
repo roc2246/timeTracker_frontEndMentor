@@ -118,8 +118,26 @@ main.grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
   width: min(70rem, 90%); }
   main.grid-container .main-box {
     grid-row-start: 1;
     grid-row-end: 3; }
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  background-color: #1c1f4a;
+  width: calc(min(70rem, 90%) - 4rem);
+  margin-left: auto;
+  margin-right: auto;
+  color: white; }
+  footer a {
+    color: #bdc1ff;
+    text-decoration: none; }
+    footer a:hover {
+      color: white; }
