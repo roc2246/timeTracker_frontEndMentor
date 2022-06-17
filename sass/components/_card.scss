@@ -18,16 +18,22 @@
 
 .metric {
   @include activity-img();
+  position: relative;
+  overflow: hidden;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  border-bottom-right-radius: calc(#{$border-radius} / .5);
-  border-bottom-left-radius: calc(#{$border-radius} / .5);
+  border-bottom-right-radius: calc(#{$border-radius} / 0.5);
+  border-bottom-left-radius: calc(#{$border-radius} / 0.5);
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   .activity-img {
     position: absolute;
+    margin-left: auto;
+    left: 0;
+    right: .5rem;
+    top: -.5rem;
   }
   &__data {
     position: relative;

@@ -76,10 +76,12 @@ body {
       border-color: white; }
 
 .metric {
+  position: relative;
+  overflow: hidden;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  border-bottom-right-radius: calc(1rem / .5);
-  border-bottom-left-radius: calc(1rem / .5);
+  border-bottom-right-radius: calc(1rem / 0.5);
+  border-bottom-left-radius: calc(1rem / 0.5);
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
@@ -97,7 +99,11 @@ body {
   .metric--self-care {
     background-color: #f1c65b; }
   .metric .activity-img {
-    position: absolute; }
+    position: absolute;
+    margin-left: auto;
+    left: 0;
+    right: .5rem;
+    top: -.5rem; }
   .metric__data {
     position: relative;
     border-radius: 1rem;
